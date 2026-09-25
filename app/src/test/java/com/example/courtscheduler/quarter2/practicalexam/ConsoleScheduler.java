@@ -13,6 +13,7 @@ public class ConsoleScheduler {
         System.out.print("Enter User ID: ");
         String userId = scanner.nextLine();
 
+        //ALMONTE
         System.out.print("Enter start time: ");
         String startTime = scanner.nextLine();
 
@@ -21,7 +22,9 @@ public class ConsoleScheduler {
 
         System.out.print("Enter date: ");
         String date = scanner.nextLine();
+        //
 
+        //PEREZ
         boolean cancelorresched = true;
         boolean validInput;
 
@@ -74,5 +77,6 @@ public class ConsoleScheduler {
         System.out.println("Schedule ID: " + scheduleId);
         System.out.println("Purpose of using the court: " + purpose);
         scanner.close();
+        //
     }
 }
