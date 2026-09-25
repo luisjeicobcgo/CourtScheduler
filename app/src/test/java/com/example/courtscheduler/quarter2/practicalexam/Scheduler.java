@@ -8,12 +8,15 @@ public class Scheduler {
         //ALMONTE
         System.out.print("Enter start time: ");
         String startTime = scanner.nextLine();
+        System.out.println(startTime);
 
         System.out.print("Enter end time: ");
         String endTime = scanner.nextLine();
+        System.out.println(endTime);
 
         System.out.print("Enter date: ");
         String date = scanner.nextLine();
+        System.out.println(date);
         //
         //PEREZ
         boolean cancelorresched = true;
