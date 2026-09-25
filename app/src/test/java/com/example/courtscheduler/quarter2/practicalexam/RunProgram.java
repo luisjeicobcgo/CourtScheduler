@@ -1,7 +1,7 @@
 package com.example.courtscheduler.quarter2.practicalexam;
 
-public class History {
-    public void Logs(){
+public class RunProgram {
+    public void Run() {
 
     }
 }
