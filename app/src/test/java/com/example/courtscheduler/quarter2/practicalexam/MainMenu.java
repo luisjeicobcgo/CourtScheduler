@@ -9,10 +9,9 @@ public class MainMenu {
         do{
             System.out.println("=====MAIN MENU=====");
             System.out.println("1. Scheduler");
-            System.out.println("2. History");
-            System.out.println("3. Exit");
-            System.out.print("Please choose an option (1, 2, 3): ");
-            String choice = menuinput.nextLine();
+            System.out.println("2. Exit");
+            System.out.print("Please choose an option (1, 2,): ");
+            String choice = menuinput.nextLine(); //Integers do not work as choices since ByteArrayInputStream converts the automation into string
             System.out.println(choice);
             if (choice.equals("1")) {
                 Scheduler scheduler = new Scheduler();
@@ -20,14 +19,8 @@ public class MainMenu {
                 choosing = false;
             }
             else if (choice.equals("2")){
-                History history = new History();
-                history.Logs();
-                choosing = false;
-            }
-            else if (choice.equals("3")){
                 System.out.println("Goodbye!");
                 break;
-
             }
             else{
                 System.out.println("===================");
