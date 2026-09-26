@@ -15,6 +15,7 @@ public class RunProgram {
         simulatedInput.append("September 30 2026\n");
         simulatedInput.append("Basketball\n");
         simulatedInput.append("2\n");
+        simulatedInput.append("2\n");
         ByteArrayInputStream automatedInput = new ByteArrayInputStream(simulatedInput.toString().getBytes());
 
         Scanner masterScanner = new Scanner(automatedInput);

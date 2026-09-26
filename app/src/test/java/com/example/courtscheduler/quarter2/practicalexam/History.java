@@ -11,5 +11,11 @@ public class History {
         //PEREZ
         System.out.println("Purpose of using the court: " + scheduler.getPurpose());
         System.out.println("===================");
+        System.out.println("Would you like to cancel your schedule appointment?");
+        System.out.println("1. Cancel Schedule");
+        System.out.println("2. Add Schedule");
+        System.out.println("3. Exit");
+        System.out.print("Please state your option: " + scheduler.getCancel());
+        System.out.println("\n===================");
     }
 }

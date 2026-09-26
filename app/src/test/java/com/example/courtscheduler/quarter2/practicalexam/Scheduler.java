@@ -10,6 +10,7 @@ public class Scheduler {
     private int scheduleId;
     Random random = new Random();
     private String purpose;
+    private String cancel;
     boolean chooseoptions = true;
     public void Scheduling(Scanner scheduleinput) {
 
@@ -45,6 +46,10 @@ public class Scheduler {
                 purpose = scheduleinput.nextLine();
                 System.out.print(purpose);
                 System.out.println("\n--- Schedule Details Captured ---");
+
+                System.out.print("Please state your option: ");
+                cancel = scheduleinput.nextLine();
+                System.out.println(cancel);
             }
             else if (choice.equals("2")){
                 History history = new History();
@@ -72,5 +77,7 @@ public class Scheduler {
     public int getID(){
         return scheduleId;
     }
-
+    public String getCancel(){
+        return cancel;
+    }
 }
