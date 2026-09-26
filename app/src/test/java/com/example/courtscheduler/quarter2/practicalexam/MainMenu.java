@@ -15,7 +15,8 @@ public class MainMenu {
             System.out.println(choice);
             if (choice.equals("1")) {
                 Scheduler scheduler = new Scheduler();
-                scheduler.Scheduling(menuinput);
+                ScheduleManager scheduleManager = new ScheduleManager();
+                scheduler.Scheduling(menuinput, scheduleManager);
                 choosing = false;
             }
             else if (choice.equals("2")){
@@ -29,10 +30,5 @@ public class MainMenu {
             }
 
         }while (choosing);
-
-
-
-
-
     }
 }
