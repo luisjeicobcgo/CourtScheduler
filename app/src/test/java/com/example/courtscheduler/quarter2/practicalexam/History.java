@@ -62,7 +62,8 @@ public class History {
                 choosing = false;
             }
             else if (choose.equals("3")){
-                System.exit(0);
+                System.out.print("Thanks for using the program!");
+                choosing = false;
             }
             else{
                 System.out.println("Invalid choice.");
