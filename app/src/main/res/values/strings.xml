@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CourtScheduler</string>
+    <string name="menu_name">HamburgerMenu</string>
+    <string name="emptyhistory">No schedules yet.</string>
+    <string name="history_screen_name">History</string>
+    <string name="schedules">Schedule Tab</string>
 </resources>
