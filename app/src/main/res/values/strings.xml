@@ -4,4 +4,27 @@
     <string name="emptyhistory">No schedules yet.</string>
     <string name="history_screen_name">History</string>
     <string name="schedules">Schedule Tab</string>
+    <string name="scheduler_bg">Scheduler Background</string>
+    <string name="greetings">Welcoming Message</string>
+    <string name="user_hello">Hello, User!</string>
+    <string name="add_scheduler_button">+ Add Schedule</string>
+    <string name="history_seeker">History</string>
+    <string name="scheduling_title">Scheduling of Court</string>
+    <string name="user_id_hint">User ID</string>
+    <string name="start_time_hint">Start Time</string>
+    <string name="end_time_hint">End Time</string>
+    <string name="schedule_date_hint">Date (MM/DD/YYYY)</string>
+    <string name="cancellation_label">Cancellation / Rescheduling</string>
+    <string name="reservation_label">Reservation</string>
+    <string name="schedule_id_hint">Schedule ID:</string>
+    <string name="court_purpose_hint">Purpose of using the court:</string>
+    <string-array name="cancellation_options">
+        <item>None</item>
+        <item>Cancel</item>
+        <item>Reschedule</item>
+    </string-array>
+    <string-array name="reservation_options">
+        <item>Reserve</item>
+        <item>Check Availability</item>
+    </string-array>
 </resources>

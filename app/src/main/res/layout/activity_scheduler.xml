@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -7,4 +8,189 @@
     android:layout_height="match_parent"
     tools:context=".Scheduler">
 
+    <ImageView
+        android:id="@+id/backgroundscheduler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#000000"
+        android:contentDescription="@string/scheduler_bg"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="47dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="4dp"
+        android:contentDescription="@string/menu_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hamburgermenu" />
+
+    <TextView
+        android:id="@+id/greeting"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/publicsans_bold"
+        android:text="@string/user_hello"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="0dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#737373"
+        android:fontFamily="@font/publicsans_bold"
+        android:text="@string/add_scheduler_button"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/greeting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ScrollView
+        android:id="@+id/schedulerScroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:fillViewport="false"
+        app:layout_constraintTop_toBottomOf="@id/button7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/publicsans_bold"
+                android:text="@string/scheduling_title"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/userID"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:backgroundTint="#BDBDBD"
+                android:hint="@string/user_id_hint"
+                android:inputType="number"
+                android:importantForAutofill="no"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#BDBDBD" />
+
+            <EditText
+                android:id="@+id/startTime"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:backgroundTint="#BDBDBD"
+                android:hint="@string/start_time_hint"
+                android:inputType="text"
+                android:importantForAutofill="no"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#BDBDBD" />
+
+            <EditText
+                android:id="@+id/endTime"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:backgroundTint="#BDBDBD"
+                android:hint="@string/end_time_hint"
+                android:inputType="text"
+                android:importantForAutofill="no"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#BDBDBD" />
+
+            <EditText
+                android:id="@+id/scheduleDate"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:backgroundTint="#BDBDBD"
+                android:hint="@string/schedule_date_hint"
+                android:inputType="date"
+                android:importantForAutofill="no"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#BDBDBD" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cancellation_label"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/cancellationRescheduling"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:entries="@array/cancellation_options" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reservation_label"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/reservation"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:entries="@array/reservation_options" />
+
+            <EditText
+                android:id="@+id/scheduleID"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:backgroundTint="#BDBDBD"
+                android:hint="@string/schedule_id_hint"
+                android:inputType="number"
+                android:importantForAutofill="no"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#BDBDBD" />
+
+            <EditText
+                android:id="@+id/courtPurpose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#BDBDBD"
+                android:gravity="top|start"
+                android:hint="@string/court_purpose_hint"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences|textMultiLine"
+                android:minLines="3"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#BDBDBD" />
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
