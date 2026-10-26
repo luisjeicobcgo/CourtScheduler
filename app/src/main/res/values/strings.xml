@@ -18,6 +18,35 @@
     <string name="reservation_label">Reservation</string>
     <string name="schedule_id_hint">Schedule ID:</string>
     <string name="court_purpose_hint">Purpose of using the court:</string>
+    <string name="courtscheduler">COURTSCHEDULER</string>
+    <string name="_10_00_am">10:00 AM</string>
+    <string name="_9_00_am">9:00 AM</string>
+    <string name="account">Account</string>
+    <string name="book">Book</string>
+    <string name="Book">Book</string>
+    <string name="Book1">Book</string>
+    <string name="bookings">Bookings</string>
+    <string name="courts">Courts</string>
+    <string name="find_game">Find Game</string>
+    <string name="home">Home</string>
+    <string name="court_booking_system">Court Booking System</string>
+    <string name="welcome_nuser_name">Welcome,\nUser Name</string>
+    <string name="logout">Logout</string>
+    <string name="court_availability">COURT AVAILABILITY</string>
+    <string name="court_1">Court 1</string>
+    <string name="indoor_available">Indoor • Available</string>
+    <string name="court_2">Court 2</string>
+    <string name="outdoor_booked">Outdoor • Booked</string>
+    <string name="court_3">Court 3</string>
+    <string name="outdoor_available">Outdoor • Available</string>
+    <string name="book_a_court">BOOK A COURT</string>
+    <string name="select_date">Select Date</string>
+    <string name="may_22_2026">May 22, 2026</string>
+    <string name="select_time">Select Time</string>
+    <string name="my_upcoming_sessions">MY UPCOMING SESSIONS</string>
+    <string name="may_22_6_00_pm">May 22 • 6:00 PM</string>
+    <string name="court_1_indoor">Court 1 • Indoor</string>
+    <string name="find_a_game">FIND A GAME</string>
     <string-array name="cancellation_options">
         <item>None</item>
         <item>Cancel</item>
