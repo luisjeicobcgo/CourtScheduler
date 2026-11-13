@@ -47,6 +47,10 @@
     <string name="may_22_6_00_pm">May 22 • 6:00 PM</string>
     <string name="court_1_indoor">Court 1 • Indoor</string>
     <string name="find_a_game">FIND A GAME</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="scheduler">Scheduler</string>
+    <string name="history">History</string>
+    <string name="open_nav_menu">Open Navigation Menu</string>
     <string-array name="cancellation_options">
         <item>None</item>
         <item>Cancel</item>
