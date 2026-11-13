@@ -48,7 +48,7 @@ public class Login extends AppCompatActivity {
                         "Login Successful!",
                         Toast.LENGTH_SHORT).show();
 
-                Intent intent = new Intent(Login.this, Dashboard.class);
+                Intent intent = new Intent(Login.this, Scheduler.class);
                 startActivity(intent);
             }
         });

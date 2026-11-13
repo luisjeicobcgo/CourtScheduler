@@ -141,37 +141,7 @@
                     android:textColor="#FFFFFF"
                     android:textColorHint="#BDBDBD" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/cancellation_label"
-                    android:textColor="#FFFFFF"
-                    android:textSize="14sp" />
 
-                <Spinner
-                    android:id="@+id/cancellationRescheduling"
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="#FFFDFD"
-                    android:backgroundTint="#767575"
-                    android:entries="@array/cancellation_options" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/reservation_label"
-                    android:textColor="#FFFFFF"
-                    android:textSize="14sp" />
-
-                <Spinner
-                    android:id="@+id/reservation"
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="#737373"
-                    android:backgroundTint="#767575"
-                    android:entries="@array/reservation_options" />
 
                 <EditText
                     android:id="@+id/scheduleID"
@@ -187,7 +157,7 @@
                 <EditText
                     android:id="@+id/courtPurpose"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
                     android:layout_marginBottom="16dp"
                     android:backgroundTint="#BDBDBD"
                     android:gravity="top|start"

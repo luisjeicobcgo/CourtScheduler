@@ -50,14 +50,8 @@
     <string name="dashboard">Dashboard</string>
     <string name="scheduler">Scheduler</string>
     <string name="history">History</string>
+    <string name="reschedule">Reschedule</string>
     <string name="open_nav_menu">Open Navigation Menu</string>
-    <string-array name="cancellation_options">
-        <item>None</item>
-        <item>Cancel</item>
-        <item>Reschedule</item>
-    </string-array>
-    <string-array name="reservation_options">
-        <item>Reserve</item>
-        <item>Check Availability</item>
-    </string-array>
+    <string name="historyMenu">Open History Menu</string>
+    <string name="removeschedule">Remove Schedule</string>
 </resources>
